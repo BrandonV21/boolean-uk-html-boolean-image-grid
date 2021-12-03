@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    /* position: relative; */
+    display: grid;
+    grid-template: "header" 50px
+                    "main" 1fr
+                    "footer" 50px /
+                    auto;                    
+}
+
+.top {
+    grid-area: header;
+    background-color: #011434;
+    /* border: 1px solid black; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top img {
+    width: 50px;
+}
+
+.main {
+    grid-area: main;
+    margin-top: 20px;
+    margin-left: 150px;
+    /* margin-right: 180px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 10px;
+}
+
+.card {
+    background-color: blanchedalmond;
+    border: black solid 1px;
+    height: 300px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.card .laptop {
+    max-width: 100%;
+    height: auto;
+}
+
+.card .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    /* position: absolute; */
+    top: -200px;
+    left: 155px;
+
+    position: relative;
+
+    vertical-align: top;
+}
+
+.icon {
+    /* margin-top: 10px; */
+    width: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: -30px;
+}
+
+.tweet {
+    margin-left: 160px;
+}
+
+.gh {
+    margin-left: 123px;
+    margin-top: -33px;
+}
+
+p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 5px;
+    background-color: #011434;
+}
